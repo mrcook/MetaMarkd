@@ -1,0 +1,69 @@
+---
+identifiers:
+  uuid: fdae2812-42f8-4c74-9f17-446800665cdf
+  asin: B000000000
+  coden: AAAAAA
+  doi: 10.1000/18
+  lccn: 12031272
+  oclc: 1089234454
+  isbn: 9780000000000
+  pg: XXXX
+title:
+  - MetaMarkd
+  - A fictional example
+authors:
+  - name: Michael R. Cook
+contributors:
+  - name: Anonymous
+    role: ill
+published:
+  - date: 1979-12-20
+    edition: 3
+    changes:
+      - Update eText formatting
+  - date: 1978-06-25
+    edition: 2
+    changes:
+      - Errata fixes
+      - eText formatting changes
+  - date: 1971-01
+    edition: 1
+first_published: 1865-11-26
+languages:
+  - language: en
+    percent: 99
+  - language: fr
+    percent: 1
+subjects:
+  - name: "Children's Fantasy"
+    code: YFH
+    scheme: Thema v1.3
+copyright:
+  - year: 2019
+    holders:
+      - Michael R. Cook
+      - Anonyous
+  - year: 2018
+    holders:
+      - Michael R. Cook
+publisher: MRCook Publishing
+illustrated: false
+word_count: 27341
+series:
+  - title: Adventures in Metadata Scheme
+    volume: 1
+movies:
+  - title: Down the rabbit hole
+    year: 2019
+summary: A short summary of the work.
+description: Some really lovely, and somewhat long description of the work.
+excerpt: |-
+  In another moment down went Alice after it, never once considering how in the
+  world she was to get out again.
+
+  The rabbit-hole went straight on like a tunnel for some way, and then dipped
+  suddenly down, so suddenly that Alice had not a moment to think about stopping
+  herself before she found herself falling down a very deep well.
+license: |-
+  This work is licensed under a Creative Commons Attribution 4.0 International License.
+---
