@@ -1,13 +1,14 @@
 ---
 identifiers:
-  uuid: 78649b63-b85d-43c6-a4c7-46211c5dbf4d
-  isbn: 9780000000000
+  - type: UUID
+    id: 78649b63-b85d-43c6-a4c7-46211c5dbf4d
+  - type: ISBN
+    id: 9780000000000
 title:
   - MetaMarkd
   - A fictional example
 authors:
-  - name: Michael R. Cook
-    role: aut
+  - Michael R. Cook
 contributors:
   - name: A. Person
     role: ill

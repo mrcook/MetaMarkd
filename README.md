@@ -29,12 +29,12 @@ Further examples can be found in the [examples](/examples) directory.
 
 ```
 identifiers:
-  uuid: dadc889c-33d7-4cc9-bab8-0c765f4de041
+  - type: UUID
+    id: dadc889c-33d7-4cc9-bab8-0c765f4de041
 title:
   - MetaMarkd Vocabulary
 authors:
-  - name: Michael R. Cook
-    role: aut
+  - Michael R. Cook
 published:
   - date: 2019-08
 languages:
@@ -56,29 +56,30 @@ license: Creative Commons Attribution 4.0 International License (CC BY 4.0)
 
 ### `identifiers`
 
-Any number or string that can uniquely identify a work.
+A list of numbers or strings that can be used to uniquely identify a work, such as an ISBN or UUID.
 
-    This property is required.
+    At least one entry is required.
 
-    The `uuid` attribute is required.
+Each entry must include the following attributes:
 
-The UUID ([Universally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)) is the only required attribute as this is independent of tools or publishing platform.
+* `type`: The type of identifier; ISBN, UUID, LCCN, etc.
+* `id`: an unique string identifying the work.
 
-The following list of reserved keys can be used to reference these industry standard identifiers:
+Examples of common identifier types:
 
-* `coden`: ASTM standard E250 bibliographic code
-* `doi`: Digital Object Identifier
-* `isbn`: International Standard Book Number
-* `lccn`: Library of Congress Control Number
-* `oclc`: Online Computer Library Center number
-* `uuid`: Universally Unique Identifier
+* `Coden`: ASTM standard E250 bibliographic code
+* `DOI`: Digital Object Identifier
+* `ISBN`: International Standard Book Number
+* `LCCN`: Library of Congress Control Number
+* `OCLC`: Online Computer Library Center number
+* `UUID`: Universally Unique Identifier
 
-These keys should be used for those identifiers, however, this specification does not restrict the use of custom keys. For example, a Project Gutenberg Canada eText identifier might be expressed using `pgca`.
+It is recommended to include an UUID ([Universally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)) as this is independent of tools or publishing platform.
 
 
 ### `title`
 
-The main and subtitle(s) of the work as an array of strings.
+The main and subtitle(s) of the work, as an array of strings.
 
     At least one entry is required.
 
@@ -87,16 +88,9 @@ The first entry in the list is always the main title, with subsequent entries us
 
 ### `authors`
 
-A list of authors of the work.
+A list of authors of the work, as an array of strings.
 
     At least one entry is required.
-
-Each entry must include the following attributes:
-
-* `name`: The full name of the author.
-* `role`: The role they had in producing the work. Usually `aut`.
-
-Values used for the `role` attribute must be one of those found in the [MARC Relator](https://www.loc.gov/marc/relators/relaterm.html) codes.
 
 
 ### `contributors`
@@ -115,6 +109,7 @@ Example contributor codes:
 * `edt`: Editor
 * `ill`: Illustrator
 * `trl`: Translator
+* `aui`: Author of introduction, etc.
 
 
 ### `published`
@@ -246,7 +241,7 @@ No limit on the length is imposed by this specification, however, we recommend t
 
 ### `keywords`
 
-A short list of keywords describing the content of the work.
+A short list of keywords describing the content of the work, as an array of strings.
 
 No restriction on the number of entries or their values is imposed by this specification, however, we recommend only a handful of single word labels, from most to least importance.
 
