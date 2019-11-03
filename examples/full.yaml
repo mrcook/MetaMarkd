@@ -1,62 +1,57 @@
 ---
 identifiers:
-  uuid: fdae2812-42f8-4c74-9f17-446800665cdf
-  asin: B000000000
-  coden: AAAAAA
-  doi: 10.1000/18
-  lccn: 12031272
-  oclc: 1089234454
+  uuid: 78649b63-b85d-43c6-a4c7-46211c5dbf4d
   isbn: 9780000000000
-  pg: XXXX
 title:
   - MetaMarkd
   - A fictional example
 authors:
   - name: Michael R. Cook
+    role: aut
 contributors:
-  - name: Anonymous
+  - name: A. Person
     role: ill
 published:
-  - date: 1979-12-20
+  - date: 1979-07-17
     edition: 3
     changes:
       - Update eText formatting
-  - date: 1978-06-25
+  - date: 1977-05-25
     edition: 2
     changes:
       - Errata fixes
       - eText formatting changes
-  - date: 1971-01
+  - date: 1970-04
     edition: 1
-first_published: 1865-11-26
+  - date: 1865-11-26
 languages:
   - language: en
     percent: 99
   - language: fr
     percent: 1
 subjects:
-  - name: "Children's Fantasy"
+  - name: Children's Fantasy
     code: YFH
     scheme: Thema v1.3
 copyright:
   - year: 2019
     holders:
       - Michael R. Cook
-      - Anonyous
+      - A. Person
   - year: 2018
     holders:
       - Michael R. Cook
-publisher: MRCook Publishing
+publisher: A Publisher
 illustrated: false
 word_count: 27341
 series:
-  - title: Adventures in Metadata Scheme
+  - name: Adventures in Holes
     volume: 1
 movies:
   - title: Down the rabbit hole
     year: 2019
 summary: A short summary of the work.
-description: Some really lovely, and somewhat long description of the work.
+description: A really lovely, and somewhat longer description of adventures down Rabbit holes.
 excerpt: |-
   In another moment down went Alice after it, never once considering how in the
   world she was to get out again.
@@ -64,6 +59,6 @@ excerpt: |-
   The rabbit-hole went straight on like a tunnel for some way, and then dipped
   suddenly down, so suddenly that Alice had not a moment to think about stopping
   herself before she found herself falling down a very deep well.
-license: |-
-  This work is licensed under a Creative Commons Attribution 4.0 International License.
+license: This work is licensed under a Creative Commons Attribution 4.0 International License.
+keywords: [ scheme, specification, metadata, markdown ]
 ---
